@@ -55,7 +55,16 @@ nav ul {
   margin-left: 20px;
   font-size: large;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    justify-items: center; /* Center the content */
+  }
 
+  .right-banner {
+    margin-top: 20px; /* Add some spacing between the picture and the right banner on small screens */
+  }
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
