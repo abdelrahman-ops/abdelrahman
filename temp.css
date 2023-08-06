@@ -1,123 +1,100 @@
-/* styles.css */
-
-/* Reset some default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li, img {
+/* Reset some default styles to provide a clean slate */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
-body {
-    font-family: 'Font Name', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f6f8fa;
-}
-
-/* Global styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Basic styling for header and navigation */
+header {
+    text-align: center;
+    background-color: #f0f0f0;
     padding: 20px;
 }
-
-.horizontal-list {
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-
-.horizontal-list li {
-    margin-right: 20px;
+li {
+    margin: 0 10px;
 }
-
-/* Header styles */
-header {
-    background-color: #24292e;
-    padding: 10px;
+a {
     color: #fff;
-}
-
-header a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
 
-/* Navigation styles */
-nav ul li a {
-    text-decoration: none;
-    color: #0366d6;
-    font-weight: bold;
+/* Styling for main content sections */
+main {
+    padding: 20px;
 }
-
-/* Main content styles */
-.my-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+section {
     margin-bottom: 20px;
 }
-
-.interface p {
-    font-size: 18px;
-}
-
-.right-banner {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.right-banner h1 {
+h2 {
     color: #333;
-}
-
-.right-banner p {
-    color: #555;
-    font-size: 16px;
-}
-
-.contact p {
-    font-size: 16px;
-    font-weight: bold;
     margin-bottom: 10px;
 }
-
-.social-icons li {
-    margin-bottom: 10px;
+p {
+    line-height: 1.6;
 }
 
-.social-icons a {
-    text-decoration: none;
-    color: #555;
-}
-
-.certificates {
-    margin-top: 30px;
-}
-
-.certificates img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Footer styles */
+/* Styling for footer */
 footer {
-    background-color: #24292e;
-    color: #fff;
     text-align: center;
     padding: 10px;
+    background-color: #f0f0f0;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .horizontal-list {
-        flex-direction: column;
-    }
 
-    .right-banner {
-        margin-top: 0;
-    }
+/* Previous CSS styles are the same */
+
+/* Additional styling for the picture */
+header img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Additional styling for the "Contact" section */
+.contact-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-links li {
+    margin: 0 10px;
+}
+.contact-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.show-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #0056b3;
 }

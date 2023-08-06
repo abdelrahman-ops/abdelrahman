@@ -23,6 +23,7 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

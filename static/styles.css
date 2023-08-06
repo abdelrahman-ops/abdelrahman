@@ -1,4 +1,9 @@
 /* CSS reset for basic styling */
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,17 +27,19 @@ img {
 }
 
 body {
-  color: #333;
-  background-color: rgb(255, 255, 255);
+  color: #E5E5E5;
+  background-color: #000000;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.all-contetent {
+.all-content {
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 header {
-  background-color: #24292e;
+  background-color: #14213D;
   margin-bottom: 20px;
 }
 
@@ -40,7 +47,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   margin-right: 20px;
-  color: #0366d6;
+  color: #E5E5E5;
   cursor: pointer;
 }
 
@@ -55,6 +62,8 @@ nav ul {
   margin-left: 20px;
   font-size: large;
 }
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -65,38 +74,30 @@ nav ul {
   text-align: center;
 }
 
+.interface h1{
+  color: #FCA311;
+}
 .interface p {
-  color: black;
+  color: #E5E5E5;
   font-size: large;
-}
-
-.right-banner {
-  flex: 1 1 300px;
-  text-align: center;
-  border: 1px solid rgba(0, 62, 73, 0.74);
-  /* THR BOX */
-  padding-top: 20px;
-  border-radius: 10px;
-  margin-right: 30px;
-}
-
-.interface img {
-  height: 300px;
-  border-radius: 150px;
-}
-
-.we {
-  color: #0078da;
-}
-
-.we p {
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 10px;
 }
 
-.we h1 {
-  color: chocolate;
+.interface .about-me p{
+  margin-top: 20px;
+  color: #E5E5E5;
+}
+.interface .contact p
+{
+  font-size: larger;
+  color: #FCA311;
+  padding-bottom: 20px;
+}
+.interface img {
+  height: 200px;
+  border-radius: 100px;
+  margin: 20px;
 }
 
 .contact {
@@ -104,29 +105,21 @@ nav ul {
   margin-top: 20px;
 }
 
-.contact p {
+.contact ul li a {
   font-size: 1.2rem;
-  color: #0078da;
+  color: #E5E5E5;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  text-decoration: none;
 }
 
-.contact ul {
-  margin-left: 30px;
+.social-icons1 li {
+  margin-bottom: 15px;
 }
 
 .social-icons1 {
   list-style: none;
   padding: 0;
-}
-
-.social-icons1 li {
-  margin-bottom: 10px;
-}
-
-.social-icons1 a {
-  color: black;
-  text-decoration: none;
 }
 
 .social-icons1 a i.fa-github {
@@ -154,7 +147,11 @@ nav ul {
   gap: 20px;
   text-align: center;
   padding: 50px 0;
-  background-color: #f0f0f0;
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #14213D;
+  box-shadow: 0 2px 4px rgba(252, 0, 0, 0.1);
 }
 
 .head{
@@ -162,6 +159,14 @@ nav ul {
   font-size: 24px;
   margin: 0; /* Remove margin to eliminate the white space */
   grid-column: 1 / span 2; /* Make the header span both columns */
+}
+.projects .head h2
+{
+  color: #FCA311;
+}
+.projects .head p{
+  margin: 15px;
+  color: #E5E5E5;
 }
 
 .project-card {
@@ -196,13 +201,19 @@ nav ul {
   gap: 20px;
   text-align: center;
   padding: 50px 0;
-  background-color: #f9f9f9;
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #14213D;
+  box-shadow: 0 2px 4px rgba(252, 0, 0, 0.1);
 }
-
-.certificates head{
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
+.certificates .head h2
+{
+  color: #FCA311;
+}
+.certificates .head p{
+  margin: 15px;
+  color: #E5E5E5;
 }
 
 .certificate-card {
@@ -233,9 +244,9 @@ nav ul {
 
 
 footer {
-  background-color: #24292e;
+  background-color: #14213D;
   padding: 30px 0;
-  color: #fff;
+  color: #E5E5E5;
   font-size: 14px;
   text-align: center;
 }
@@ -245,42 +256,21 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.footer-content h3 {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.contact-info p {
-  margin-bottom: 5px;
-}
-
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons ul {
+.contact-links {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
-
-.social-icons li {
+.contact-links li {
   margin: 0 10px;
 }
-
-.social-icons a {
-  color: #fff;
-  font-size: 24px;
+.contact-links a {
+  color: #333;
   text-decoration: none;
+  font-weight: bold;
+  color: #E5E5E5;
 }
-
-.social-icons a:hover {
-  color: #aee1e1;
-}
-
 .footer-bottom {
   margin-top: 20px;
   border-top: 1px solid #444;
