@@ -304,54 +304,63 @@ footer {
 }
 
 
-/* Media Queries for Responsive Design */
 
-/* Small screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 446px) {
   .all-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .interface {
-    text-align: center;
+    margin: 0;
+    padding: 10px;
   }
 
   .interface img {
-    height: 150px; /* Reduce image height */
-  }
-
-  .head {
-    text-align: center; /* Center headers */
-  }
-
-  .certificate-card img, .project-card img {
-    max-width: 80%; /* Reduce image width */
-  }
-
-  .show-more {
-    grid-column: span 1; /* Span the button across one column */
+    height: 150px;
+    margin-top: 20px;
   }
 
   .projects, .certificates {
-    display: flex; /* Enable flex behavior */
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+    border: none;
   }
 
   .project-card, .certificate-card {
-    flex: 1; /* Allow item to grow and share available space equally */
-    padding: 10px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .project-card img, .certificate-card img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .project-card h3, .certificate-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card p, .certificate-card p {
+    font-size: 14px;
+  }
+
+  .show-more {
+    grid-column: span 1;
+    justify-self: center;
   }
 }
 
-/* Extra small screens */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .interface img {
-    height: 120px; /* Further reduce image height */
+    height: 120px;
+    margin-top: 10px;
   }
 
-  .certificate-card img, .project-card img {
-    max-width: 100%; /* Full-width images */
+  .project-card h3, .certificate-card h3 {
+    font-size: 16px;
+  }
+
+  .project-card p, .certificate-card p {
+    font-size: 13px;
   }
 }
-
