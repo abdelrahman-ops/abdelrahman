@@ -304,9 +304,6 @@ footer {
 }
 
 
-
-/* ... (your existing styles) ... */
-
 /* Media Queries for Responsive Design */
 
 /* Small screens */
@@ -324,11 +321,6 @@ footer {
     height: 150px; /* Reduce image height */
   }
 
-  .projects, .certificates {
-    grid-template-columns: repeat(1, 1fr); /* Stack columns in one column */
-    padding: 20px 0; /* Adjust padding */
-  }
-
   .head {
     text-align: center; /* Center headers */
   }
@@ -339,6 +331,16 @@ footer {
 
   .show-more {
     grid-column: span 1; /* Span the button across one column */
+  }
+
+  .projects, .certificates {
+    grid-template-columns: 1fr; /* Change to one column */
+    padding: 20px 0; /* Adjust padding */
+  }
+
+  .project-card, .certificate-card {
+    max-width: 100%; /* Full width on small screens */
+    margin: 0 auto 20px;
   }
 }
 
@@ -353,4 +355,3 @@ footer {
   }
 }
 
-/* ... (your existing styles) ... */
