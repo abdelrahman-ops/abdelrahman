@@ -131,18 +131,19 @@ nav ul {
 }
 
 .project-card {
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto 20px;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .project-card img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
   width: 100%;
@@ -222,18 +223,23 @@ ion-icon {
 }
 
 .certificate-card {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto 20px;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow:hidden;
 }
 
 .certificate-card img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .certificate-card h3 {
