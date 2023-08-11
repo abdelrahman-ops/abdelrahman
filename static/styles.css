@@ -302,3 +302,55 @@ footer {
   border-top: 1px solid #444;
   padding-top: 10px;
 }
+
+
+
+/* ... (your existing styles) ... */
+
+/* Media Queries for Responsive Design */
+
+/* Small screens */
+@media (max-width: 768px) {
+  .all-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .interface {
+    text-align: center;
+  }
+
+  .interface img {
+    height: 150px; /* Reduce image height */
+  }
+
+  .projects, .certificates {
+    grid-template-columns: repeat(1, 1fr); /* Stack columns in one column */
+    padding: 20px 0; /* Adjust padding */
+  }
+
+  .head {
+    text-align: center; /* Center headers */
+  }
+
+  .certificate-card img, .project-card img {
+    max-width: 80%; /* Reduce image width */
+  }
+
+  .show-more {
+    grid-column: span 1; /* Span the button across one column */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .interface img {
+    height: 120px; /* Further reduce image height */
+  }
+
+  .certificate-card img, .project-card img {
+    max-width: 100%; /* Full-width images */
+  }
+}
+
+/* ... (your existing styles) ... */
