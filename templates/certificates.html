@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="shortcut icon" href="../images/my new logo.jpg" type="image/png">
+
+    <title>Abdelrahman Ataa</title>
+</head>
+
+<body>
+      <header>
+        <div class="head">
+          <nav>
+                <ul class="horizontal-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cer">Certificates</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                </ul>
+          </nav>
+        </div>
+      </header> 
+    <main>
+
+        <div class="all-content">
+                <div class="container">
+                    <div class="interface">
+                        <h1>Welcome at Abdelrahman's</h1>
+                        <img src="../images/mypic.jpg" alt="My Picture" class="my-img">
+                    </div>
+                </div>
+                
+                <!-- Certificates Section -->
+                <section id="cer" class="certificates">
+                    <div class="head">
+                        <h2>Certificates</h2>
+                        <p>Certificates I obtained through my career</p>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <img src="../images/certificates/CS50.png" alt="Certificate 1">
+                        <h3>CS50 Introduction to computer science</h3>
+                        <p>Harvard University</p>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="../images/certificates/octware.jpg" alt="Certificate 2">
+                        <h3>Data Science Training</h3>
+                        <p>Octware Team</p>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="../images/certificates/iot.jpg" alt="Certificate 3">
+                        <h3>IOT Training</h3>
+                        <p>CREATIVA</p>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="../images/certificates/cs1.jpg" alt="Certificate 4">
+                        <h3>Foundations of Cybersecurity</h3>
+                        <p>Google Certificates</p>
+                    </div>
+                </section>
+        </div>
+  </main>
+
+    <footer>
+        <div class="footer-content">
+            <section id="contact">
+                <h2>Contact</h2>
+                <ul class="contact-links">
+                    <li><a href="https://github.com/abdelrahman-ops" target="_blank"><i class="fab fa-github" style="color: #333;"></i>GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/abdelrahman-ataa-b557b8219" target="_blank"><i class="fab fa-linkedin" style="color: #0077B5;"></i>LinkedIn</a></li>
+                    <li><a href="https://facebook.com/itz_abdelrahman" target="_blank"><i class="fab fa-facebook" style="color: #1877F2;"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/avada_kadavras" target="_blank"><i class="fab fa-twitter" style="color: #1DA1F2;"></i>Twitter</a></li>
+                    <li><a href="mailto:abdelrahmanataa17@gmail.com"><i class="fas fa-envelope" style="color: #D44638;"></i>Email</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; Abdelrahman Ataa. All rights reserved.</p>
+        </div>
+      </footer>
+
+      
+      <script>
+        // Function to handle smooth scrolling to the target element
+        function scrollToElement(targetElement) {
+          document.querySelector(targetElement).scrollIntoView({ behavior: "smooth" });
+        }
+      
+        // Event listener to handle click on navigation links
+        document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll("nav a");
+      
+          links.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+              event.preventDefault();
+              const targetElementId = link.getAttribute("href");
+              scrollToElement(targetElementId);
+            });
+          });
+        });
+      </script>
+
+      
+      
+</body>
+
+</html>
